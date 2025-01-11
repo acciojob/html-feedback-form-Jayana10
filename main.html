@@ -8,19 +8,26 @@
 
 <body>
 	<h1>Feedback Form</h1>
-	<form action = "#" method="post">
-	<label for ="name">Name</label>
-		<input type="text" id = "name" required><br>
-	 <label for="portfolio">Portfolio URL:</label>
+	 <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+        <br>
+
+        <label for="portfolio">Portfolio URL:</label>
         <input type="url" id="portfolio" name="portfolio" required>
         <br>
-	<label for="favColor">Favorite Color</label>
-		<input type="color" id="favColor" name="favColor" minlength="3" maxlength="50" required><br>
-	<label for="likeness">Likeness</label>
-		<input type="range" id = "likeness" name="likeness" min="1" max="100" required>
 
-		<button type="submit">Submit</button>
-	</form>
+        <label for="favColor">Favorite Color:</label>
+        <input type="color" id="favColor" name="favColor" required>
+        <br>
+
+        <label for="likeness">Likeness (1-100):</label>
+        <input type="range" id="likeness" name="likeness" min="1" max="100" required>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
