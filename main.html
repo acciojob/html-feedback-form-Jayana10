@@ -10,15 +10,16 @@
 	<h1>Feedback Form</h1>
 	<form action = "#" method="post">
 	<label for ="name">Name</label>
-		<input type="text" id = "name"><br>
-	<lable for="portfolio">Portfolio</lable>
-		<a href ="https://course.acciojob.com/open-web-editor?question=9766a13e-0007-484c-92e1-39e4566daf67">portfolio</a>
-		<br>
+		<input type="text" id = "name" required><br>
+	 <label for="portfolio">Portfolio URL:</label>
+        <input type="url" id="portfolio" name="portfolio" required>
+        <br>
 	<label for="favColor">Favorite Color</label>
-		<input type="color" id="favColor" minlength="3" maxlength="50"><br>
+		<input type="color" id="favColor" name="favColor" minlength="3" maxlength="50"><br>
 	<label for="likeness">Likeness</label>
-		<input range="text" id = "likeness" min="1" max="100">
-	
+		<input type="range" id = "likeness" name="likeness" min="1" max="100">
+
+		<button type="submit">Submit</button>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
